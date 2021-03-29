@@ -46,10 +46,14 @@ model_history = model.fit(x=x_train, y=y_train,
 model.save('./weights/boston_model.h5') 
 ```
 
+![](./screenshot/img02.png)
+
 #### pb 檔
 ```py
 model.save('./checkpoints/boston_model.pb')
 ```
+
+![](./screenshot/img01.png)
 
 ## 載入模型
 #### HDF5 檔
@@ -61,3 +65,6 @@ myModel = keras.models.load_model('./weights/boston_model.h5')
 ```py
 myModel = keras.models.load_model('./checkpoints/boston_model.pb')
 ```
+
+## 結語
+
