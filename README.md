@@ -66,5 +66,3 @@ myModel = keras.models.load_model('./weights/boston_model.h5')
 myModel = keras.models.load_model('./checkpoints/boston_model.pb')
 ```
 
-## 結語
-
