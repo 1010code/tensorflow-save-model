@@ -1,4 +1,6 @@
 # Tensorflow Keras 模型儲存
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/1010code/tensorflow-save-model/blob/main/house_price_prediction.ipynb)
+
 Tensorflow 有三種模型儲存方式。第一種是存成 checkpoint 檔(.ckpt)，使用時機是訓練過程中欲保存目前 session 狀態。第二種是存成 pb 檔(.pb)，如果模型架構已確定或是訓練已結束，準備匯出應用時，可以直接存成 pb 檔。第三種是 Keras (目前已合併到 TF2.0) 的 `save()` 直接存成 HDF5 檔(.h5)，HDF 是設計用來儲存和組織大量資料的一組檔案格式，其內容包含了模型架構與權重。本篇文章透過波士頓房價預測資料集，訓練一個 DNN 模型並示範如何匯出與載入 `.pb` 和 `.h5` 模型檔。
 
 
